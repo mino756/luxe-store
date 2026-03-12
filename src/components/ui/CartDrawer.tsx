@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface CartItem {
   id: string;
@@ -214,13 +215,15 @@ export function CartDrawer({
                 </div>
 
                 {/* Checkout Button */}
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full bg-black text-white py-4 rounded-xl font-medium text-lg hover:bg-gray-900 transition-colors"
-                >
-                  Proceed to Checkout
-                </motion.button>
+                <Link href="/checkout" onClick={onClose}>
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full bg-black text-white py-4 rounded-xl font-medium text-lg hover:bg-gray-900 transition-colors"
+                  >
+                    Proceed to Checkout
+                  </motion.button>
+                </Link>
 
                 <p className="text-center text-gray-400 text-sm">
                   Shipping & taxes calculated at checkout

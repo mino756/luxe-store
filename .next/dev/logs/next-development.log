@@ -1,54 +1,604 @@
-[00:00:02.427] Server  LOG     ✓ Ready in 1842ms
-[00:00:59.547] Server  WARN    ⚠ Cross origin request detected from 192.168.1.8 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:59.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:14.104] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:21.652] Browser WARN    Image with src "/sweatshirt.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:04:35.267] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:06:08.408] Server  LOG     ✓ Compiled in 1458ms
-[00:06:17.270] Server  LOG     ✓ Compiled in 1445ms
-[00:06:21.623] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:23.341] Server  LOG     ✓ Compiled in 201ms
-[00:06:29.577] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:34.672] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:36.272] Server  LOG     ✓ Compiled in 265ms
-[00:06:45.554] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:07:01.029] Server  LOG     ✓ Compiled in 273ms
-[00:07:08.986] Server  LOG     ✓ Compiled in 107ms
-[00:07:17.158] Server  LOG     ✓ Compiled in 376ms
-[00:08:03.563] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:26.322] Server  LOG     ✓ Compiled in 239ms
-[00:10:38.665] Server  LOG     ✓ Compiled in 77ms
-[00:10:51.073] Server  LOG     ✓ Compiled in 1436ms
-[00:10:58.310] Server  ERROR   ⨯ Error: The default export is not a React Component in "/products/[id]/not-found"
-[00:10:58.629] Server  ERROR   ⨯ Error: The default export is not a React Component in "/products/[id]/not-found"
-[00:11:00.446] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:09.866] Server  LOG     ✓ Compiled in 552ms
-[00:11:10.907] Server  LOG     ✓ Compiled in 216ms
-[00:11:25.093] Server  LOG     ✓ Compiled in 1844ms
-[00:11:32.658] Browser ERROR   ./src/app/about/error.tsx
-Ecmascript file had an error
-src/app/about/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:32.993] Server  LOG     ✓ Compiled in 66ms
-[00:11:38.991] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:11:42.304] Server  LOG     ✓ Compiled in 83ms
-[00:12:22.617] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:32.997] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:13:15.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:24.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:22.640] Server  LOG     ✓ Compiled in 306ms
-[00:16:35.107] Server  LOG     ✓ Compiled in 332ms
-[00:17:09.143] Server  LOG     ✓ Compiled in 297ms
-[00:17:21.987] Server  LOG     ✓ Compiled in 296ms
-[00:17:26.102] Server  LOG     ✓ Compiled in 258ms
-[00:17:38.948] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:00.088] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:08.467] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:24.347] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:19:19.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:20.678] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:17.855] Server  LOG     ✓ Compiled in 299ms
-[00:22:46.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:29:26.006] Server  LOG       Reload env: .env.local
-[00:29:26.310] Server  LOG     ✓ Compiled in 198ms
+[00:00:03.422] Server  LOG     ✓ Ready in 2.7s
+[00:00:06.711] Server  LOG     ○ Compiling / ...
+[00:00:11.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:16.054] Server  LOG     ✓ Compiled in 188ms
+[00:00:26.855] Server  LOG     ✓ Compiled in 334ms
+[00:00:31.163] Server  LOG     ✓ Compiled in 578ms
+[00:00:39.756] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:44.332] Browser WARN    Image with src "/sweatshirt.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:48.313] Server  LOG     ○ Compiling /checkout ...
+[00:00:51.038] Server  ERROR   ⨯ ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+
+
+
+./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+
+
+[00:00:51.194] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:51.194] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.691] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.691] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.748] Server  ERROR   ⨯ ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+
+
+
+./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+
+
+[00:00:52.775] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.775] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.775] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.775] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.775] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.775] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:52.800] Server  ERROR   ⨯ ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+
+
+
+./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+
+
+[00:00:53.052] Browser ERROR   uncaughtError: Error: ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+
+
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-client] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:00:53.746] Browser ERROR   ./src/app/checkout/page.tsx:6:1
+Export CartContext doesn't exist in target module
+  4 | import Link from 'next/link';
+  5 | import { ArrowLeft } from 'lucide-react';
+> 6 | import { CartContext } from '@/components/providers/CartProvider';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import DemoNotice from '@/components/ui/DemoNotice';
+  8 | import CheckoutForm from '@/components/ui/CheckoutForm';
+  9 | import OrderSummary from '@/components/ui/OrderSummary';
+
+The export CartContext was not found in module [project]/src/components/providers/CartProvider.tsx [app-ssr] (ecmascript).
+Did you mean to import CartProvider?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/checkout/page.tsx [Client Component Browser]
+    ./src/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/checkout/page.tsx [Client Component SSR]
+    ./src/app/checkout/page.tsx [Server Component]
+[00:01:04.987] Server  LOG     ✓ Compiled in 159ms
+[00:01:05.414] Server  ERROR   ⨯ Error: useCart must be used within a CartProvider
+[00:01:05.650] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:09.321] Server  ERROR   ⨯ Error: useCart must be used within a CartProvider
+[00:01:09.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:10.844] Server  LOG     ✓ Compiled in 0ms
+[00:01:18.434] Server  ERROR   ⨯ Error: useCart must be used within a CartProvider
+[00:01:18.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:20.927] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:01:21.121] Server  LOG     ✓ Compiled in 73ms
+[00:01:22.763] Browser WARN    Image with src "/sweatshirt.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:06.353] Server  LOG     ✓ Compiled in 263ms
+[00:02:14.794] Server  ERROR   ⨯ Error: useCart must be used within a CartProvider
+[00:02:15.002] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:16.554] Server  ERROR   ⨯ Error: useCart must be used within a CartProvider
+[00:02:17.004] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:52.308] Server  LOG     ✓ Compiled in 223ms
+[00:03:01.346] Browser WARN    Image with src "/sweatshirt.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:37.810] Server  LOG     ✓ Compiled in 223ms
+[00:05:46.908] Server  LOG     ✓ Compiled in 62ms
+[00:05:53.588] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:53.807] Browser WARN    Image with src "/sweatshirt.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:11.210] Server  LOG     ✓ Compiled in 323ms
+[00:07:12.368] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:12.556] Browser WARN    Image with src "/sweatshirt.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:25.059] Server  LOG     ✓ Compiled in 87ms
+[00:07:32.759] Server  LOG     ✓ Compiled in 129ms
+[00:07:42.917] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

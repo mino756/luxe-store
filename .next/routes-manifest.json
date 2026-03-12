@@ -56,6 +56,12 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
+      "page": "/checkout",
+      "regex": "^/checkout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/checkout(?:/)?$"
+    },
+    {
       "page": "/collection",
       "regex": "^/collection(?:/)?$",
       "routeKeys": {},
@@ -66,6 +72,12 @@
       "regex": "^/favicon\\.ico(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/success",
+      "regex": "^/success(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/success(?:/)?$"
     }
   ],
   "dataRoutes": [],
