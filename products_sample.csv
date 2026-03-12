@@ -1,0 +1,7 @@
+title,price,originalPrice,category,image,description,rating,reviews,inStock,sku,material,sizes,colors
+"Premium Sweatshirt",29,49,"clothing","/sweatshirt.jpg","Comfortable and stylish sweatshirt for everyday wear",4.8,342,true,"SWSH-001","100% Cotton Blend","XS,S,M,L,XL,XXL","Black;Gray;White"
+"Black Hoodie",59,89,"clothing","/black-hoodie.jpg","Premium black hoodie perfect for all seasons",4.9,521,true,"HOOD-001","75% Cotton, 25% Polyester","XS,S,M,L,XL,XXL","Black;Charcoal;Navy"
+"Denim Jacket",89,129,"clothing","/denim-jacket.jpg","Classic denim jacket with modern edge",4.7,289,true,"DENIM-001","100% Cotton Denim","XS,S,M,L,XL,XXL","Classic Blue;Dark Wash;Light Wash"
+"Summer Dress",49,79,"clothing","/summer-dress-blue.jpg","Breezy summer dress for warm days",4.6,198,true,"DRESS-001","100% Linen","XS,S,M,L,XL","Sky Blue;Sunny Yellow;Coral"
+"Leather Boots",129,189,"shoes","/leather-boots.jpg","Premium leather boots for any season",4.9,412,true,"BOOTS-001","Genuine Leather","5,6,7,8,9,10,11,12,13","Black;Brown;Tan"
+"Canvas Bag",39,59,"accessories","/canvas-bag.jpg","Versatile canvas tote bag for everyday use",4.5,156,true,"BAG-001","100% Canvas","One Size","Natural Canvas;Black;Navy"

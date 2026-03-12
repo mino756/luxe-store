@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - LuxeCart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #555; }
+    
+    ::selection { background: #000; color: #fff; }
+    html { scroll-behavior: smooth; }
+    
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .animate-slide-in { animation: slideIn 0.6s ease-out forwards; opacity: 0; }
+    .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; opacity: 0; }
+    
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    
+    .cart-drawer {
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .cart-drawer.open { transform: translateX(0); }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover::after { width: 100%; }
+    
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+    
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .team-card:hover .team-overlay {
+      opacity: 1;
+    }
+    
+    .value-card {
+      transition: all 0.3s ease;
+    }
+    
+    .value-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="bg-white text-black antialiased">
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300 bg-white/95 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="../index.html" class="text-2xl font-bold tracking-tight">
+          <span class="bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">LUXE</span>
+          <span class="text-black">CART</span>
+        </a>
+        
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="../index.html" class="nav-link relative text-gray-700 hover:text-black font-medium transition-colors">Home</a>
+          <a href="../collection/index.html" class="nav-link relative text-gray-700 hover:text-black font-medium transition-colors">Collections</a>
+          <a href="index.html" class="nav-link relative text-black font-medium transition-colors">About</a>
+        </nav>
+        
+        <div class="flex items-center gap-4">
+          <button id="cartBtn" class="relative p-3 hover:bg-gray-100 rounded-full transition-colors">
+            <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+            <span id="cartBadge" class="absolute -top-1 -right-1 bg-black text-white text-xs min-w-5 h-5 flex items-center justify-center rounded-full font-bold px-1 hidden">0</span>
+          </button>
+          
+          <button id="mobileMenuBtn" class="md:hidden p-2 hover:bg-gray-100 rounded-full">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="mobileMenu" class="md:hidden overflow-hidden h-0 opacity-0 transition-all duration-300">
+      <nav class="px-6 pb-4 space-y-4 bg-white/95 backdrop-blur-md">
+        <a href="../index.html" class="block text-gray-700 hover:text-black font-medium py-2">Home</a>
+        <a href="../collection/index.html" class="block text-gray-700 hover:text-black font-medium py-2">Collections</a>
+        <a href="index.html" class="block text-black font-medium py-2">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center">
+        <span class="text-sm text-gray-500 uppercase tracking-wider animate-slide-in">Our Story</span>
+        <h1 class="text-5xl md:text-6xl font-bold mt-2 mb-4 animate-slide-in delay-100">About LuxeCart</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in delay-200">
+          We're on a mission to elevate everyday style with premium essentials designed for the modern wardrobe. Quality meets style in every piece we create.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <span class="text-sm text-gray-500 uppercase tracking-wider">Since 2020</span>
+          <h2 class="text-4xl font-bold mt-2 mb-6">Crafting Style, One Piece at a Time</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+            LuxeCart began with a simple idea: fashion should be both beautiful and accessible. What started as a small boutique in New York has grown into a global brand loved by thousands.
+          </p>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+            We believe that what you wear should make you feel confident, comfortable, and uniquely you. That's why every item in our collection is carefully curated and crafted with attention to detail.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            From sourcing the finest materials to working with skilled artisans, we're committed to delivering quality that lasts. Our pieces are designed to be timeless staples in your wardrobe.
+          </p>
+        </div>
+        
+        <div class="relative reveal">
+          <div class="relative h-[500px] rounded-2xl overflow-hidden">
+            <img src="../public/model-fullbody.jpg" alt="Our Story" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-8 -left-8 bg-black text-white p-8 rounded-2xl">
+            <p class="text-4xl font-bold">4+</p>
+            <p class="text-gray-400">Years of Excellence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-24 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center reveal">
+          <p class="text-5xl font-bold mb-2">50K+</p>
+          <p class="text-gray-400">Happy Customers</p>
+        </div>
+        <div class="text-center reveal">
+          <p class="text-5xl font-bold mb-2">200+</p>
+          <p class="text-gray-400">Products</p>
+        </div>
+        <div class="text-center reveal">
+          <p class="text-5xl font-bold mb-2">30+</p>
+          <p class="text-gray-400">Countries</p>
+        </div>
+        <div class="text-center reveal">
+          <p class="text-5xl font-bold mb-2">4.9</p>
+          <p class="text-gray-400">Average Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-sm text-gray-500 uppercase tracking-wider">What We Stand For</span>
+        <h2 class="text-4xl font-bold mt-2">Our Values</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="value-card bg-white p-8 rounded-2xl reveal">
+          <div class="w-16 h-16 bg-black text-white rounded-2xl flex items-center justify-center mb-6">
+            <i data-lucide="gem" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Quality First</h3>
+          <p class="text-gray-600">We never compromise on quality. Every piece is crafted with premium materials and meticulous attention to detail.</p>
+        </div>
+        
+        <div class="value-card bg-white p-8 rounded-2xl reveal">
+          <div class="w-16 h-16 bg-black text-white rounded-2xl flex items-center justify-center mb-6">
+            <i data-lucide="leaf" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Sustainability</h3>
+          <p class="text-gray-600">We're committed to sustainable practices, from eco-friendly materials to ethical manufacturing processes.</p>
+        </div>
+        
+        <div class="value-card bg-white p-8 rounded-2xl reveal">
+          <div class="w-16 h-16 bg-black text-white rounded-2xl flex items-center justify-center mb-6">
+            <i data-lucide="heart" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Customer Love</h3>
+          <p class="text-gray-600">Our customers are at the heart of everything we do. We're dedicated to providing exceptional service and support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-sm text-gray-500 uppercase tracking-wider">The People Behind</span>
+        <h2 class="text-4xl font-bold mt-2">Meet Our Team</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="team-card relative group reveal">
+          <div class="relative h-96 rounded-2xl overflow-hidden">
+            <img src="../public/model-portrait-bw.jpg" alt="Sarah Mitchell" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="team-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-end p-6">
+              <div>
+                <h3 class="text-xl font-bold text-white">Sarah Mitchell</h3>
+                <p class="text-gray-300">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-card relative group reveal">
+          <div class="relative h-96 rounded-2xl overflow-hidden">
+            <img src="../public/model-male.jpg" alt="James Chen" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="team-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-end p-6">
+              <div>
+                <h3 class="text-xl font-bold text-white">James Chen</h3>
+                <p class="text-gray-300">Creative Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-card relative group reveal">
+          <div class="relative h-96 rounded-2xl overflow-hidden">
+            <img src="../public/model-studio-white.jpg" alt="Emma Davis" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="team-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-end p-6">
+              <div>
+                <h3 class="text-xl font-bold text-white">Emma Davis</h3>
+                <p class="text-gray-300">Head of Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16">
+        <div class="reveal">
+          <span class="text-sm text-gray-500 uppercase tracking-wider">Get in Touch</span>
+          <h2 class="text-4xl font-bold mt-2 mb-6">Contact Us</h2>
+          <p class="text-gray-600 text-lg mb-8">
+            Have a question or feedback? We'd love to hear from you. Reach out to us and our team will get back to you as soon as possible.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-semibold">Address</p>
+                <p class="text-gray-600">123 Fashion Ave, New York, NY 10001</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-semibold">Email</p>
+                <p class="text-gray-600">hello@luxecart.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-semibold">Phone</p>
+                <p class="text-gray-600">+1 (555) 123-4567</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-sm reveal">
+          <form onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you soon.');">
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label class="block text-sm font-medium mb-2">First Name</label>
+                <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-black transition-colors" placeholder="John">
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-2">Last Name</label>
+                <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-black transition-colors" placeholder="Doe">
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-2">Email</label>
+              <input type="email" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-black transition-colors" placeholder="john@example.com">
+            </div>
+            
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-2">Subject</label>
+              <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-black transition-colors" placeholder="How can we help?">
+            </div>
+            
+            <div class="mb-6">
+              <label class="block text-sm font-medium mb-2">Message</label>
+              <textarea rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-black transition-colors resize-none" placeholder="Your message..."></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-black text-white py-4 rounded-xl font-medium hover:bg-gray-900 transition-colors">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div class="col-span-2 reveal">
+          <h2 class="text-2xl font-bold mb-4">LUXE<span class="text-gray-400">CART</span></h2>
+          <p class="text-gray-400 mb-6 max-w-sm">Elevating everyday style with premium essentials designed for the modern wardrobe.</p>
+          
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+              <span>123 Fashion Ave, New York, NY 10001</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+              <span>+1 (555) 123-4567</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>hello@luxecart.com</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reveal">
+          <h4 class="font-semibold mb-4">Shop</h4>
+          <ul class="space-y-3">
+            <li><a href="../collection/index.html" class="text-gray-400 hover:text-white transition-colors">New Arrivals</a></li>
+            <li><a href="../collection/index.html" class="text-gray-400 hover:text-white transition-colors">Best Sellers</a></li>
+            <li><a href="../collection/index.html" class="text-gray-400 hover:text-white transition-colors">Sale</a></li>
+            <li><a href="../collection/index.html" class="text-gray-400 hover:text-white transition-colors">Collections</a></li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h4 class="font-semibold mb-4">Support</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping Info</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Returns</a></li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-6 py-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="text-gray-500 text-sm">© 2024 LuxeCart. All rights reserved.</p>
+          
+          <div class="flex items-center gap-4">
+            <a href="#" class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-colors">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-colors">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-colors">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+          </div>
+          
+          <div class="flex items-center gap-6 text-sm text-gray-500">
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div id="cartOverlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="cartDrawer" class="cart-drawer fixed right-0 top-0 h-full w-full max-w-md bg-white z-50 shadow-2xl flex flex-col">
+    <div class="flex items-center justify-between p-6 border-b">
+      <div class="flex items-center gap-3">
+        <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+        <h2 class="text-xl font-semibold">Shopping Cart</h2>
+        <span id="cartCount" class="bg-black text-white text-xs px-2 py-1 rounded-full">0</span>
+      </div>
+      <button id="closeCart" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    
+    <div id="cartItems" class="flex-1 overflow-auto p-6">
+      <div class="flex flex-col items-center justify-center h-full text-center">
+        <i data-lucide="shopping-bag" class="w-16 h-16 text-gray-300 mb-4"></i>
+        <p class="text-gray-500 text-lg">Your cart is empty</p>
+        <p class="text-gray-400 text-sm mt-2">Add some items to get started!</p>
+      </div>
+    </div>
+    
+    <div id="cartFooter" class="border-t p-6 space-y-4 bg-white hidden">
+      <div class="flex justify-between text-gray-600">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="flex justify-between text-gray-600">
+        <span>Shipping</span>
+        <span>Free</span>
+      </div>
+      <div class="border-t pt-4 flex justify-between text-xl font-bold">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="w-full bg-black text-white py-4 rounded-xl font-medium text-lg hover:bg-gray-900 transition-colors">
+        Proceed to Checkout
+      </button>
+      <p class="text-center text-gray-400 text-sm">Shipping & taxes calculated at checkout</p>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+    
+    const products = [
+      { id: "1", title: "Sweat Shirt", price: 29, image: "../public/sweatshirt.jpg" },
+      { id: "2", title: "Black Hoodie", price: 59, image: "../public/black-hoodie.jpg" },
+      { id: "3", title: "Denim Jacket", price: 89, image: "../public/denim-jacket.jpg" },
+      { id: "4", title: "Summer Dress", price: 49, image: "../public/summer-dress-blue.jpg" },
+      { id: "5", title: "Leather Boots", price: 129, image: "../public/leather-boots.jpg" },
+      { id: "6", title: "Canvas Bag", price: 39, image: "../public/canvas-bag.jpg" },
+    ];
+    
+    let cart = JSON.parse(localStorage.getItem('luxeCart')) || [];
+    
+    function updateCart() {
+      const cartItems = document.getElementById('cartItems');
+      const cartFooter = document.getElementById('cartFooter');
+      const cartCount = document.getElementById('cartCount');
+      const cartBadge = document.getElementById('cartBadge');
+      const cartSubtotal = document.getElementById('cartSubtotal');
+      const cartTotal = document.getElementById('cartTotal');
+      
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      
+      cartCount.textContent = cart.length;
+      cartBadge.textContent = totalItems;
+      cartBadge.classList.toggle('hidden', totalItems === 0);
+      cartSubtotal.textContent = `$${totalPrice.toFixed(2)}`;
+      cartTotal.textContent = `$${totalPrice.toFixed(2)}`;
+      
+      if (cart.length === 0) {
+        cartItems.innerHTML = `
+          <div class="flex flex-col items-center justify-center h-full text-center">
+            <i data-lucide="shopping-bag" class="w-16 h-16 text-gray-300 mb-4"></i>
+            <p class="text-gray-500 text-lg">Your cart is empty</p>
+            <p class="text-gray-400 text-sm mt-2">Add some items to get started!</p>
+          </div>
+        `;
+        cartFooter.classList.add('hidden');
+      } else {
+        cartItems.innerHTML = cart.map((item, index) => `
+          <div class="flex gap-4 p-4 bg-gray-50 rounded-xl mb-4" style="animation: slideIn 0.3s ease ${index * 0.05}s forwards; opacity: 0;">
+            <div class="relative w-20 h-20 bg-white rounded-lg overflow-hidden flex-shrink-0">
+              <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-medium text-gray-900 truncate">${item.title}</h4>
+              <p class="text-gray-600 font-semibold mt-1">$${item.price}</p>
+              <div class="flex items-center gap-3 mt-2">
+                <button onclick="updateQuantity('${item.id}', ${item.quantity - 1})" class="w-8 h-8 bg-white rounded-lg border border-gray-200 flex items-center justify-center hover:border-gray-400 transition-colors">
+                  <i data-lucide="minus" class="w-3 h-3"></i>
+                </button>
+                <span class="w-8 text-center font-medium">${item.quantity}</span>
+                <button onclick="updateQuantity('${item.id}', ${item.quantity + 1})" class="w-8 h-8 bg-white rounded-lg border border-gray-200 flex items-center justify-center hover:border-gray-400 transition-colors">
+                  <i data-lucide="plus" class="w-3 h-3"></i>
+                </button>
+              </div>
+            </div>
+            <button onclick="removeFromCart('${item.id}')" class="text-gray-400 hover:text-red-500 transition-colors p-1">
+              <i data-lucide="trash-2" class="w-4 h-4"></i>
+            </button>
+          </div>
+        `).join('');
+        cartFooter.classList.remove('hidden');
+      }
+      
+      lucide.createIcons();
+    }
+    
+    function updateQuantity(productId, quantity) {
+      if (quantity <= 0) {
+        removeFromCart(productId);
+      } else {
+        const item = cart.find(item => item.id === productId);
+        if (item) {
+          item.quantity = quantity;
+          localStorage.setItem('luxeCart', JSON.stringify(cart));
+          updateCart();
+        }
+      }
+    }
+    
+    function removeFromCart(productId) {
+      cart = cart.filter(item => item.id !== productId);
+      localStorage.setItem('luxeCart', JSON.stringify(cart));
+      updateCart();
+    }
+    
+    function openCart() {
+      document.getElementById('cartOverlay').classList.remove('hidden');
+      setTimeout(() => document.getElementById('cartOverlay').classList.remove('opacity-0'), 10);
+      document.getElementById('cartDrawer').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeCart() {
+      document.getElementById('cartOverlay').classList.add('opacity-0');
+      setTimeout(() => document.getElementById('cartOverlay').classList.add('hidden'), 300);
+      document.getElementById('cartDrawer').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    
+    document.getElementById('cartBtn').addEventListener('click', openCart);
+    document.getElementById('closeCart').addEventListener('click', closeCart);
+    document.getElementById('cartOverlay').addEventListener('click', closeCart);
+    
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.style.height = menuOpen ? 'auto' : '0';
+      mobileMenu.style.opacity = menuOpen ? '1' : '0';
+    });
+    
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '-50px' });
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+    
+    updateCart();
+  </script>
+</body>
+</html>

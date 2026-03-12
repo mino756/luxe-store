@@ -1,0 +1,32 @@
+# SEO Configuration for Luxe Store
+# Allows search engines to crawl and index all public pages
+
+User-agent: *
+Allow: /
+Allow: /collection
+Allow: /about
+Allow: /products/
+Allow: /api/
+
+# Disallow admin and private areas (add as needed)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/admin/
+Disallow: /.env
+Disallow: /.next/
+
+# Delay between requests (in seconds)
+Crawl-delay: 2
+
+# Sitemap for search engines
+Sitemap: https://luxecart.com/sitemap.xml
+Sitemap: https://luxecart.com/sitemap-products.xml
+
+# Allow specific crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
