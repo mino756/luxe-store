@@ -6,8 +6,11 @@ interface OrderItem {
   id: string;
   title: string;
   price: number;
+  originalPrice?: number;
   quantity: number;
   image?: string;
+  color?: string;
+  size?: string;
 }
 
 interface OrderSummaryProps {
@@ -42,14 +45,25 @@ export default function OrderSummary({ items, total }: OrderSummaryProps) {
                 )}
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-gray-900 text-sm truncate">{item.title}</p>
-                  <p className="text-xs text-gray-500 mt-1">Qty: <span className="font-semibold">{item.quantity}</span></p>
+                  <div className="text-xs text-gray-500 mt-1 space-y-0.5">
+                    {item.color && <p>Color: <span className="font-semibold text-gray-700">{item.color}</span></p>}
+                    {item.size && <p>Size: <span className="font-semibold text-gray-700">{item.size}</span></p>}
+                    <p>Qty: <span className="font-semibold text-gray-700">{item.quantity}</span></p>
+                  </div>
                 </div>
               </div>
               <div className="text-right flex-shrink-0 ml-4">
                 <p className="font-bold text-gray-900 text-sm">
                   ${(item.price * item.quantity).toFixed(2)}
                 </p>
-                <p className="text-xs text-gray-400 mt-1">${item.price.toFixed(2)}/ea</p>
+                {item.originalPrice && item.originalPrice > item.price ? (
+                  <div className="text-xs mt-1 space-y-0.5">
+                    <p className="text-gray-400 line-through">${(item.originalPrice).toFixed(2)}</p>
+                    <p className="text-green-600 font-semibold">Save ${((item.originalPrice - item.price) * item.quantity).toFixed(2)}</p>
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-400 mt-1">${item.price.toFixed(2)}/ea</p>
+                )}
               </div>
             </div>
           ))

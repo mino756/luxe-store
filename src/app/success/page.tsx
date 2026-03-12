@@ -12,11 +12,22 @@ interface DemoOrder {
     email: string;
     address: string;
     city: string;
+    state?: string;
+    postalCode: string;
     country: string;
     phone: string;
   };
-  items: any[];
+  items: Array<{
+    id: string;
+    title: string;
+    price: number;
+    originalPrice?: number;
+    quantity: number;
+    color?: string;
+    size?: string;
+  }>;
   total: number;
+  savings?: number;
 }
 
 export default function SuccessPage() {
@@ -45,15 +56,38 @@ CUSTOMER INFORMATION
 Name: ${order.customer.fullName}
 Email: ${order.customer.email}
 Phone: ${order.customer.phone}
-Address: ${order.customer.address}
+Address: ${order.customer.address}${order.customer.state ? ', ' + order.customer.state : ''}
 City: ${order.customer.city}
+Postal Code: ${order.customer.postalCode}
 Country: ${order.customer.country}
 
-ORDER ITEMS
-===========
-${order.items.map((item) => `${item.title} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`).join('\n')}
+ORDER ITEMS DETAILS
+===================
+${order.items
+          .map((item) => {
+            const itemTotal = item.price * item.quantity;
+            const itemSavings = item.originalPrice ? ((item.originalPrice - item.price) * item.quantity).toFixed(2) : '0.00';
+            return `
+Product: ${item.title}
+Color: ${item.color || 'Not specified'}
+Size: ${item.size || 'One size'}
+Quantity: ${item.quantity}
+Price per unit: $${item.price.toFixed(2)}${
+              item.originalPrice ? ` (Originally: $${item.originalPrice.toFixed(2)})` : ''
+            }
+Item Total: $${itemTotal.toFixed(2)}${item.originalPrice && item.originalPrice > item.price ? ` (You save: $${itemSavings})` : ''}
+---`;
+          })
+          .join('\n')}
 
-TOTAL: $${order.total.toFixed(2)}
+ORDER SUMMARY
+=============
+Subtotal: $${order.total.toFixed(2)}
+Shipping: Free
+Tax: Calculated at checkout
+${order.savings && order.savings > 0 ? `Total Savings: $${order.savings.toFixed(2)}` : ''}
+
+TOTAL AMOUNT: $${order.total.toFixed(2)}
 
 NOTE: This is a demonstration checkout. No real payment was processed.
 This order exists only for preview purposes in your local storage.
@@ -143,22 +177,53 @@ This order exists only for preview purposes in your local storage.
 
             <div className="border-t border-gray-200 pt-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Order Items</h3>
-              <div className="space-y-3 mb-4">
-                {order.items.map((item) => (
-                  <div key={item.id} className="flex justify-between items-center text-sm">
-                    <div>
-                      <p className="font-medium text-gray-900">{item.title}</p>
-                      <p className="text-gray-500">Qty: {item.quantity}</p>
+              <div className="space-y-4 mb-6">
+                {order.items.map((item) => {
+                  const itemTotal = item.price * item.quantity;
+                  const savings = item.originalPrice ? (item.originalPrice - item.price) * item.quantity : 0;
+                  return (
+                    <div key={item.id} className="border border-gray-200 rounded-lg p-4 bg-gray-50">
+                      <div className="flex justify-between items-start mb-3">
+                        <div className="flex-1">
+                          <p className="font-bold text-gray-900">{item.title}</p>
+                          <div className="text-xs text-gray-600 space-y-1 mt-2">
+                            {item.color && <p><span className="font-semibold">Color:</span> {item.color}</p>}
+                            {item.size && <p><span className="font-semibold">Size:</span> {item.size}</p>}
+                            <p><span className="font-semibold">Qty:</span> {item.quantity}</p>
+                          </div>
+                        </div>
+                        <div className="text-right ml-4">
+                          <p className="font-bold text-lg text-gray-900">${itemTotal.toFixed(2)}</p>
+                          <p className="text-xs text-gray-500 mt-1">${item.price.toFixed(2)}/ea</p>
+                          {item.originalPrice && item.originalPrice > item.price && (
+                            <div className="mt-2 space-y-1">
+                              <p className="text-xs text-gray-400 line-through">${(item.originalPrice * item.quantity).toFixed(2)}</p>
+                              <p className="text-xs font-bold text-green-600">Save ${savings.toFixed(2)}</p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
                     </div>
-                    <p className="font-semibold text-gray-900">
-                      ${(item.price * item.quantity).toFixed(2)}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
-              <div className="border-t border-gray-200 pt-4">
-                <div className="flex justify-between items-center">
+              <div className="border-t-2 border-gray-300 pt-4 mt-6">
+                <div className="flex justify-between items-center mb-2">
+                  <p className="text-base font-semibold text-gray-700">Subtotal</p>
+                  <p className="text-base font-semibold text-gray-900">${order.total.toFixed(2)}</p>
+                </div>
+                <div className="flex justify-between items-center mb-2">
+                  <p className="text-base font-semibold text-gray-700">Shipping</p>
+                  <p className="text-base font-semibold text-green-600">Free</p>
+                </div>
+                {order.savings && order.savings > 0 && (
+                  <div className="flex justify-between items-center mb-3 p-3 bg-green-50 rounded-lg border border-green-200">
+                    <p className="text-base font-bold text-green-700">💰 Total Savings</p>
+                    <p className="text-lg font-bold text-green-600">-${order.savings.toFixed(2)}</p>
+                  </div>
+                )}
+                <div className="border-t border-gray-300 pt-4 mt-4 flex justify-between items-center">
                   <p className="text-lg font-bold text-gray-900">Total</p>
                   <p className="text-2xl font-bold text-black">${order.total.toFixed(2)}</p>
                 </div>
