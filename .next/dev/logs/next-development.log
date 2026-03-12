@@ -50,3 +50,5 @@ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
 [00:19:20.678] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:21:17.855] Server  LOG     ✓ Compiled in 299ms
 [00:22:46.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:26.006] Server  LOG       Reload env: .env.local
+[00:29:26.310] Server  LOG     ✓ Compiled in 198ms
