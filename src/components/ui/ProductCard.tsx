@@ -25,7 +25,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
           <div className="w-full h-full group-hover:scale-105 transition-transform duration-300">
             <Image
               src={product.image}
-              alt={product.title}
+              alt={`${product.title} - Premium fashion item`}
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -41,8 +41,9 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
           <button
             className="absolute bottom-4 left-4 right-4 bg-white text-black py-3 rounded-xl font-medium flex items-center justify-center gap-2 shadow-lg opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-black hover:text-white"
             onClick={() => onAddToCart(product)}
+            aria-label={`Add ${product.title} to cart, $${product.price}`}
           >
-            <ShoppingBag size={18} />
+            <ShoppingBag size={18} aria-hidden="true" />
             Add to Cart
           </button>
 

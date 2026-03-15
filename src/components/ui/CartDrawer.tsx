@@ -86,13 +86,16 @@ export function CartDrawer({
             initial="hidden"
             animate="visible"
             exit="exit"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="cart-drawer-title"
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b">
               <div className="flex items-center gap-3">
-                <ShoppingBag size={24} />
-                <h2 className="text-xl font-semibold">Shopping Cart</h2>
-                <span className="bg-black text-white text-xs px-2 py-1 rounded-full">
+                <ShoppingBag size={24} aria-hidden="true" />
+                <h2 className="text-xl font-semibold" id="cart-drawer-title">Shopping Cart</h2>
+                <span className="bg-black text-white text-xs px-2 py-1 rounded-full" aria-label={`${items.length} item${items.length !== 1 ? 's' : ''} in cart`}>
                   {items.length}
                 </span>
               </div>
@@ -101,8 +104,9 @@ export function CartDrawer({
                 whileTap={{ scale: 0.9 }}
                 onClick={onClose}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                aria-label="Close shopping cart"
               >
-                <X size={24} />
+                <X size={24} aria-hidden="true" />
               </motion.button>
             </div>
 
@@ -152,7 +156,7 @@ export function CartDrawer({
                           ${item.price}
                         </p>
 
-                        {/* Quantity Controls */}
+                      {/* Quantity Controls */}
                         <div className="flex items-center gap-3 mt-2">
                           <motion.button
                             whileTap={{ scale: 0.9 }}
@@ -160,10 +164,11 @@ export function CartDrawer({
                               onUpdateQuantity(item.id, item.quantity - 1)
                             }
                             className="w-8 h-8 bg-white rounded-lg border border-gray-200 flex items-center justify-center hover:border-gray-400 transition-colors"
+                            aria-label={`Decrease ${item.title} quantity`}
                           >
-                            <Minus size={14} />
+                            <Minus size={14} aria-hidden="true" />
                           </motion.button>
-                          <span className="w-8 text-center font-medium">
+                          <span className="w-8 text-center font-medium" aria-label={`Quantity: ${item.quantity}`}>
                             {item.quantity}
                           </span>
                           <motion.button
@@ -172,8 +177,9 @@ export function CartDrawer({
                               onUpdateQuantity(item.id, item.quantity + 1)
                             }
                             className="w-8 h-8 bg-white rounded-lg border border-gray-200 flex items-center justify-center hover:border-gray-400 transition-colors"
+                            aria-label={`Increase ${item.title} quantity`}
                           >
-                            <Plus size={14} />
+                            <Plus size={14} aria-hidden="true" />
                           </motion.button>
                         </div>
                       </div>
@@ -184,8 +190,9 @@ export function CartDrawer({
                         whileTap={{ scale: 0.9 }}
                         onClick={() => onRemove(item.id)}
                         className="text-gray-400 hover:text-red-500 transition-colors p-1"
+                        aria-label={`Remove ${item.title} from cart`}
                       >
-                        <Trash2 size={18} />
+                        <Trash2 size={18} aria-hidden="true" />
                       </motion.button>
                     </motion.div>
                   ))}

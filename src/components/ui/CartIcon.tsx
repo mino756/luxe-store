@@ -28,8 +28,9 @@ export function CartIcon({ itemCount, onClick }: CartIconProps) {
       className="relative p-3 hover:bg-gray-100 rounded-full transition-colors"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
+      aria-label={`Shopping cart, ${itemCount} item${itemCount !== 1 ? 's' : ''}`}
     >
-      <ShoppingBag size={24} />
+      <ShoppingBag size={24} aria-hidden="true" />
 
       {/* Badge with bounce animation */}
       <AnimatePresence>
@@ -39,6 +40,7 @@ export function CartIcon({ itemCount, onClick }: CartIconProps) {
             initial={{ scale: 0, opacity: 0 }}
             animate={controls}
             exit={{ scale: 0, opacity: 0 }}
+            aria-hidden="true"
           >
             {itemCount > 99 ? "99+" : itemCount}
           </motion.span>

@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  userScalable: "yes",
 };
 
 export const metadata: Metadata = {
@@ -66,6 +66,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Skip Navigation Link */}
+        <style>{`
+          .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            z-index: 100;
+            border-radius: 0 0 4px 0;
+          }
+          .skip-link:focus {
+            top: 0;
+          }
+        `}</style>
         {/* Enable fast 3G preloading */}
         <link rel="preload" as="style" href="/globals.css" />
 
@@ -127,7 +144,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <a href="#main-content" className="skip-link">Skip to main content</a>
+        {children}
+      </body>
     </html>
   );
 }
